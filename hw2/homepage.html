@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+</head>
+
+<style type="text/css">
+    html,body,p {font-family: 'Times New Roman', Times, serif;}
+    ul.nav a {text-decoration: none; color: black; font-size: 24px;}
+    ul.nav {list-style-type: none; text-align: center; border-top: 1px solid black; border-bottom: 1px solid black}
+    ul.nav li {display: inline-block; padding: 0 20px}
+    ul.nav a:hover {color: #906cb2}
+
+    #nav {
+        font-size: 30px;
+    }
+   
+    #header {
+            width: 100%;
+            height: 200px;
+            background-color: #906cb2;
+            background-position: center;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+    }
+
+    #schedule {
+        color: black;
+        font-size: 17px;
+        margin-left: 45%;
+        
+    }
+    
+    p.form_header {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:20%;
+        height:20%
+    }
+
+
+</style>
+
+
+<body>
+    <ul class = 'nav'>
+        <li><a href = "#">Home</a></li> 
+        <li><a href = "about.html">About</a></li> 
+        <li><a href = "contact.html">Contact</a></li> 
+        
+
+    </ul>
+
+    <div id="header">
+        <p>
+        Lavender Foundation <br><br>
+        Interested in learning computer science? <br><br>
+        Schedule an appointment! <br>
+
+        </p>
+    </div>
+
+    <p class = "form_header"> Fill out information to Schedule an appointment</p>
+    <form method="get" action="schedule.php" name="schedule" id="schedule">
+        <label for="txtNameId">Name</label> <input type='text' name='txtName' id='txtNameId' placeholder="Enter Name"> 
+        <br /> <br />
+        <label for="txtNameId">Email</label> <input type='text' name='txtName' id='txtNameId' placeholder="Enter Email">
+        <br /> <br />
+        Trial Date <br>
+        <input type="checkbox" name='choice1'> Monday <br>
+        <input type="checkbox" name='choice2'> Tuesday <br>
+        <input type="checkbox" name='choice3'> Wednesday <br>
+        <input type="checkbox" name='choice4'> Thursday <br>
+        <input type="checkbox" name='choice5'> Friday <br>
+        <input type="checkbox" name='choice6'> Saturday <br>
+        <input type="checkbox" name='choice7'> Sunday <br>
+        <br />
+         <input type = 'reset' value='Submit'
+                onclick="alert('form submited')">
+    </form>
+
+    <img id="logo" src="lav.png" >
+
+    
+
+
+</body>
+</html>
