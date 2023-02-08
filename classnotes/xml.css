@@ -1,0 +1,20 @@
+Student {
+    display: block;
+    border-bottom: 1px solid #666
+}
+
+StudentName {
+    display:block;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px
+}
+
+StudentID {
+    font-size: 20px; 
+    display: block
+}
+
+StudentID:before {
+    content : "ID: ";
+}
