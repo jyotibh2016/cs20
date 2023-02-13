@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joe’s Hotdog Stand</title>
+</head>
+<style>
+    html,body,p {
+        font-family: 'Times New Roman', Times, serif; 
+        text-align: center;
+    }
+
+    #button {
+        border-radius: 12px;
+        background-color: #ade6e6;
+        font-size: 20px;
+        padding: 12px 28px;
+    }
+
+    #button:hover {
+        background-color: white;
+    }
+
+</style>
+
+<body>
+    <h1>Joe’s Hotdog Stand</h1>
+    <button id="button" onclick="order()"> Order Here </button>
+
+    <script>
+        function order() {
+            document.write("<h1>Joe’s Hotdog Stand</h1>");
+            hotdogs = prompt("How many hotdogs do you want?", "");
+            fries = prompt("How many fries do you want?", "");
+            sodas = prompt("How many sodas do you want?", "");
+
+            hotdogs_cost = parseFloat(parseInt(hotdogs * 4.00 * 100))/100;
+            fries_cost = parseFloat(parseInt(fries * 3.50 * 100))/100;
+            sodas_cost = parseFloat(parseInt(sodas * 1.75 * 100))/100;
+
+            document.write(parseInt(hotdogs) + " hotdogs cost <b>$" + 
+                                            hotdogs_cost + "</b><br /><br />");
+            document.write(parseInt(fries) + " fries cost <b>$" + 
+                                            fries_cost + "</b><br /><br />");
+            document.write(parseInt(sodas) + " sodas cost <b>$" + 
+                                            sodas_cost + "</b><br /><br />");
+
+            total = hotdogs_cost + fries_cost + sodas_cost;
+            document.write("The subtotal is <b>$" + 
+                                        parseFloat(parseInt(total * 100))/100 
+                                                        + "</b><br /><br />");
+
+            if (total >= 20) {
+                total = 0.90 * total;
+                document.write("A discount is applied, the new total is <b>$" 
+                                        + parseFloat(parseInt(total * 100))/100
+                                                          + "</b><br /><br />");
+            }
+
+            tax_total = parseFloat(parseInt(1.0625 * total * 100))/100;
+
+            document.write("After tax, the final total is <b>$" + tax_total 
+                                                        + "</b><br /><br />");
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
