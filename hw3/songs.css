@@ -1,0 +1,29 @@
+song {
+    display: block;
+    border-bottom: 1px solid #666
+}
+
+songTitle {
+    display:block;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    color: #008080;
+    margin-bottom: 10px
+}
+
+songArtist {
+    font-size: 20px; 
+    display: block;
+    color: blue;
+}
+
+songGenre {
+    display: block;
+    color: #4B0082
+}
+
+songYear {
+    display: block;
+    color: #4B0082
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href = "songs.css" ?>
+
+<songList>
+    <song>
+        <songTitle>Anti-Hero</songTitle>
+        <songArtist>Artist: Taylor Swift</songArtist>
+        <songGenre>Genre: Pop</songGenre>
+        <songYear>Year: 2022</songYear>
+    </song>
+    <song>
+        <songTitle>Lavender Haze</songTitle>
+        <songArtist>Artist: Taylor Swift</songArtist>
+        <songGenre>Genre: Pop</songGenre>
+        <songYear>Year: 2022</songYear>
+    </song>
+    <song>
+        <songTitle>Maroon</songTitle>
+        <songArtist>Artist: Taylor Swift</songArtist>
+        <songGenre>Genre: Pop</songGenre>
+        <songYear>Year: 2022</songYear>
+    </song>
+    <song>
+        <songTitle>Anti-Hero</songTitle>
+        <songArtist>Artist: Taylor Swift</songArtist>
+        <songGenre>Genre: Pop</songGenre>
+        <songYear>Year: 2022</songYear>
+    </song>
+    <song>
+        <songTitle>good 4 you</songTitle>
+        <songArtist>Artist: Olivia Rodrigo</songArtist>
+        <songGenre>Genre: Rock</songGenre>
+        <songYear>Year: 2021</songYear>
+    </song>
+    <song>
+        <songTitle>brutal</songTitle>
+        <songArtist>Artist: Olivia Rodrigo</songArtist>
+        <songGenre>Genre: Rock</songGenre>
+        <songYear>Year: 2021</songYear>
+    </song>
+    <song>
+        <songTitle>deja vu</songTitle>
+        <songArtist>Artist: Olivia Rodrigo</songArtist>
+        <songGenre>Genre: Rock</songGenre>
+        <songYear>Year: 2021</songYear>
+    </song>
+    <song>
+        <songTitle>Dynamite</songTitle>
+        <songArtist>Artist: BTS</songArtist>
+        <songGenre>Genre: K-Pop</songGenre>
+        <songYear>Year: 2020</songYear>
+    </song>
+    <song>
+        <songTitle>Boy With Luv</songTitle>
+        <songArtist>Artist: BTS</songArtist>
+        <songGenre>Genre: K-Pop</songGenre>
+        <songYear>Year: 2019</songYear>
+    </song>
+    <song>
+        <songTitle>Save Me</songTitle>
+        <songArtist>Artist: BTS</songArtist>
+        <songGenre>Genre: K-Pop</songGenre>
+        <songYear>Year: 2016</songYear>
+    </song>
+</songList>
