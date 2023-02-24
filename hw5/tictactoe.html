@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+    </head>
+    <style>
+        body {
+            background-image: url('background.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        #game {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+
+        h1 {
+            text-align:center;
+            font-size:75px;
+        }
+
+        h2 {
+            text-align:center;
+        }
+
+        .box {
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .x::after {
+            content: 'X';
+        }
+
+        .o::after {
+            content: 'O';
+        }
+
+        .box {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+        }
+
+        .box:not(.disabled):hover {
+            background: #eee;
+        }
+
+        .gameOver {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: rgb(0 0 0 / 50%) 0 0 0 9999px;
+        }
+
+        .gameOverState {
+            position: absolute;
+            top: -200px;
+            font-size: 60px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            transform: translateX(-30%);
+        }
+
+        .visible {
+            display: block;
+        }
+
+
+    </style>
+
+    <body>
+
+        <h1>Tic-Tac-Toe</h1>
+        <h2 id="currentState">Player X's Turn</h2>
+        <div id="game">
+            <div class="box" data-value="0"></div>
+            <div class="box" data-value="1"></div>
+            <div class="box" data-value="2"></div>
+            <div class="box" data-value="3"></div>
+            <div class="box" data-value="4"></div>
+            <div class="box" data-value="5"></div>
+            <div class="box" data-value="6"></div>
+            <div class="box" data-value="7"></div>
+            <div class="box" data-value="8"></div>
+        </div>
+        <div class="gameOver">
+            <span class="gameOverState"></span>
+            <button class="restart">Restart</button>
+        </div>
+
+        <script>
+            const game = {
+                start: 0,
+                xTurn: true,
+                xPosition: [],
+                oPosition: [],
+                winningStates: [
+                    // Rows
+                    ['0', '1', '2'],
+                    ['3', '4', '5'],
+                    ['6', '7', '8'],
+
+                    // Columns
+                    ['0', '3', '6'],
+                    ['1', '4', '7'],
+                    ['2', '5', '8'],
+
+                    // Diagonal
+                    ['0', '4', '8'],
+                    ['2', '4', '6']
+                ]
+            }
+
+            //Change the state of the board once a cell is clicked
+            document.addEventListener('click', event => {
+                const target = event.target
+                const isCell = target.classList.contains('box')
+                const isDisabled = target.classList.contains('disabled')
+
+                //Determines whose turn it is
+                if (game.start > 0) {
+                    document.getElementById('currentState')
+                        .innerHTML = "Player X's Turn";
+                } else if (game.xTurn) {
+                    document.getElementById('currentState')
+                        .innerHTML = "Player 0's Turn";
+                } else {
+                    document.getElementById('currentState')
+                        .innerHTML = "Player X's Turn";
+                }
+                
+
+                game.start = false;
+
+                if (isCell && !isDisabled) {
+                    const cellValue = target.dataset.value
+
+                    game.xTurn === true
+                        ? game.xPosition.push(cellValue)
+                        : game.oPosition.push(cellValue)
+
+                    target.classList.add('disabled')
+                    target.classList.add(game.xTurn ? 'x' : 'o')
+
+
+                    game.xTurn = !game.xTurn
+                    
+                    // If all cells are disabled, then its draw
+                    if (!document.querySelectorAll('.box:not(.disabled)').length) {
+                        document.querySelector('.gameOver').classList.add('visible')
+                        document.querySelector('.gameOverState').textContent = 'Draw!'
+                    }
+
+                    //checks if any of the players has won
+                    game.winningStates.forEach(winningState => {
+                        const xWins = 
+                            winningState.every(state => 
+                                                game.xPosition.includes(state))
+                        const oWins = 
+                            winningState.every(state => 
+                                                game.oPosition.includes(state))
+
+                        if (xWins || oWins) {
+                            document.querySelectorAll('.box').forEach(cell => 
+                                                cell.classList.add('disabled'))
+                            document.querySelector('.gameOver').classList.add('visible')
+                            document.querySelector('.gameOverState').textContent
+                                                                         = xWins
+                                ? 'X wins!'
+                                : 'O wins!'
+                        }
+                    })
+                }
+            })
+
+            //Resets the board state once the game is over
+            document.querySelector('.restart').addEventListener('click', () => {
+                document.querySelector('.gameOver').classList.remove('visible')
+                document.querySelectorAll('.box').forEach(cell => {
+                    cell.classList.remove('disabled', 'x', 'o')
+                })
+
+                game.xTurn = true
+                game.start += 1;
+                game.xPosition = []
+                game.oPosition = []
+
+            })
+        </script>
+    </body>
+</html>
