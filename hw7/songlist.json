@@ -1,0 +1,106 @@
+[
+    {
+        "title" : "Anti-Hero",
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
+        "year" : 2022
+    },
+
+    {
+        "title" : "Lavender Haze",
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
+        "year" : 2022
+    },
+
+    {
+        "title" : "Maroon",
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
+        "year" : 2022
+    },
+
+    {
+        "title" : "Snow on the Beach",
+        "artists" : ["Taylor Swift", "Lana Del Rey"],
+        "genres" : ["Pop"],
+        "year" : 2022
+    },
+
+    {
+        "title" : "good 4 u",
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Rock", "Pop"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "brutal",
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Rock", "Pop"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "deja vu",
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Pop"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "drivers license",
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Pop"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "Happier Than Ever",
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Pop", "R&B"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "Getting Older",
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Alternative"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "Your Power",
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Pop", "R&B"],
+        "year" : 2021
+    },
+
+    {
+        "title" : "lovely",
+        "artists" : ["Billie Eilish", "Khalid"],
+        "genres" : ["Pop"],
+        "year" : 2018
+    },
+
+    {
+        "title" : "Dynamite",
+        "artists" : ["BTS"],
+        "genres" : ["K-Pop"],
+        "year" : 2020
+    },
+
+    {
+        "title" : "Boy With Luv",
+        "artists" : ["BTS"],
+        "genr" : ["K-Pop"],
+        "year" : 2019
+    },
+
+    {
+        "title" : "Save Me",
+        "artists" : ["BTS"],
+        "genres" : ["K-Pop"],
+        "year" : 2016
+    }
+]
