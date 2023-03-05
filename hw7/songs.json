@@ -1,106 +1,106 @@
 [
     {
         "title" : "Anti-Hero",
-        "artist(s)" : ["Taylor Swift"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
         "year" : 2022
     },
 
     {
         "title" : "Lavender Haze",
-        "artist(s)" : ["Taylor Swift"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
         "year" : 2022
     },
 
     {
         "title" : "Maroon",
-        "artist(s)" : ["Taylor Swift"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Taylor Swift"],
+        "genres" : ["Pop"],
         "year" : 2022
     },
 
     {
         "title" : "Snow on the Beach",
-        "artist(s)" : ["Taylor Swift", "Lana Del Rey"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Taylor Swift", "Lana Del Rey"],
+        "genres" : ["Pop"],
         "year" : 2022
     },
 
     {
         "title" : "good 4 u",
-        "artist(s)" : ["Olivia Rodrigo"],
-        "genre(s)" : ["Rock", "Pop"],
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Rock", "Pop"],
         "year" : 2021
     },
 
     {
         "title" : "brutal",
-        "artist(s)" : ["Olivia Rodrigo"],
-        "genre(s)" : ["Rock", "Pop"],
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Rock", "Pop"],
         "year" : 2021
     },
 
     {
         "title" : "deja vu",
-        "artist(s)" : ["Olivia Rodrigo"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Pop"],
         "year" : 2021
     },
 
     {
         "title" : "drivers license",
-        "artist(s)" : ["Olivia Rodrigo"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Olivia Rodrigo"],
+        "genres" : ["Pop"],
         "year" : 2021
     },
 
     {
         "title" : "Happier Than Ever",
-        "artist(s)" : ["Billie Eilish"],
-        "genre(s)" : ["Pop", "R&B"],
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Pop", "R&B"],
         "year" : 2021
     },
 
     {
         "title" : "Getting Older",
-        "artist(s)" : ["Billie Eilish"],
-        "genre(s)" : ["Alternative"],
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Alternative"],
         "year" : 2021
     },
 
     {
         "title" : "Your Power",
-        "artist(s)" : ["Billie Eilish"],
-        "genre(s)" : ["Pop", "R&B"],
+        "artists" : ["Billie Eilish"],
+        "genres" : ["Pop", "R&B"],
         "year" : 2021
     },
 
     {
         "title" : "lovely",
-        "artist(s)" : ["Billie Eilish", "Khalid"],
-        "genre(s)" : ["Pop"],
+        "artists" : ["Billie Eilish", "Khalid"],
+        "genres" : ["Pop"],
         "year" : 2018
     },
 
     {
         "title" : "Dynamite",
-        "artist(s)" : ["BTS"],
-        "genre(s)" : ["K-Pop"],
+        "artists" : ["BTS"],
+        "genres" : ["K-Pop"],
         "year" : 2020
     },
 
     {
         "title" : "Boy With Luv",
-        "artist(s)" : ["BTS"],
-        "genre(s)" : ["K-Pop"],
+        "artists" : ["BTS"],
+        "genr" : ["K-Pop"],
         "year" : 2019
     },
 
     {
         "title" : "Save Me",
-        "artist(s)" : ["BTS"],
-        "genre(s)" : ["K-Pop"],
+        "artists" : ["BTS"],
+        "genres" : ["K-Pop"],
         "year" : 2016
     }
 ]
