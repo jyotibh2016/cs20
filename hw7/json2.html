@@ -12,31 +12,21 @@
         $.get( "https://jyotibh2016.github.io/cs20/hw7/songs.json", 
                 function( data ) {
                     str = JSON.stringify(data);
+
+					document.write(str + "<br/>");
                     
                     data.forEach(function(song) { 
                         str = JSON.stringify(song);
-                        // document.write(song.title + " <br/>");
 
-                        // document.write("Released " + song.year + " <br/>")
+                        document.write(song.title + " <br/>");
+						document.write("Artist(s): " + song.artists.join(', ') + "<br/>");
+						document.write("Genre(s): " + song.genres.join(', ') + "<br/>");
+                        document.write("Released " + song.year + " <br/>")
+						document.write("<br/>");
                         
-                        
-
-                        // document.write(song.artists[0]);
-                        // console.log(typeof(song.artists));
-                        document.write(str + " <br/> ");
 			        })
 
                 });
-
-	// document.write (phil["first_name"] + "<br>");
- 	// strStudent  = JSON.stringify(phil);
-	// document.write (strStudent +  "<br>")
-  	// jsonStudent = JSON.parse(strStudent);
-	// document.write (jsonStudent["last_name"] + "<br>");
-	// student1 = '{"name":"Sue","profession":"teacher"}';
-	// document.write (student1 + '<br>');
-	// student1Obj = JSON.parse(student1);
-	// document.write (student1Obj['name']+ '<br>');
 	</script>
 </body>
 </html>
